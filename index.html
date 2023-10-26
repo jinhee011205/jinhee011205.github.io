@@ -4,9 +4,16 @@
         <title>전진희의 홈페이지</title>
         <meta charset="utf-8" /> <!-- utf-8, euc-kr -->
         <meta name="keywords" content="웹퍼블리싱, 계원, html, css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <style>
+            body{
+                color: brown;
+            }
+        </style>
     </head>
     <body> <!-- 본문 -->
-        <a href="sub.html" target="_blank">서브페이지</a> <!-- 서브페이지 이동 -->
+        
+        <a style="color: aqua;" href="sub.html" target="_blank">서브페이지</a> <!-- 서브페이지 이동 -->
         <a href="http://www.naver.com"> 네이버</a>
         <a href="http://cafe.naver.com/kwdmd" target="blank"> 계원디미디카페</a>
 
@@ -86,17 +93,122 @@
                 border: solid 1px black;
             }
         </style>
-        <table>
+        <table summary="table 기초">
+            <caption>테이블 기초</caption>
             <tr> <!-- table row 행 줄-->
-                <th> rowspen="2"</th> <!--table header-->
-                <th> colspan="2">제목2</th> <!-- colum 열 칸 -->
-                <th>제목3</th>
+                <th scope="co1" rowspen="2"></th> <!--table header-->
+                <th scope="co1" colspan="2">제목2</th> <!-- colum 열 칸 -->
+                <th scope="co1">제목3</th>
             </tr>
             <tr>
                 <td>내용1</td>
                 <td>내용2</td>
                 <td>내용3</td>
-            </tr>
+            </tr> 
+            <tread>표재목</tread>
+            <tbody>표본문</tbody>=
+            <tfoot>표끝</tfoot>
         <table>
+            
+        <div>블록(block)형 구획 나누기 </div>
+        <span>인라인(inline)형 구획 나누기</span> 
+        <!-- 의미 없이 사용하기 좋은 태그 -->
+        
+        <form>
+            <label for="name_1">아이디</label>
+            <input name="name_1" type="text" placeholder="-기호없이 숫자만 입력" />
+            <input type="password" />
+
+            <input type="radio" name="p1" checked/>사과
+            <input type="radio" name="p1" />배
+            <input type="radio" name="p1" />딸기
+
+            <input type="checkbox" />가을
+            <input type="checkbox" />겨울
+            <input type="checkbox" />봄
+
+            <select> <!-- select box, combo box-->
+                <option>네이버</option>
+                <option>구글</option>
+                <option>계원</option>
+            </select>
+
+            <textarea rows="10" cols="60">내용</textarea>
+
+            <input onclick="alert('버튼클릭');" type="button" value="버튼입니다" />
+            <button>
+                <strong>
+                    <del>
+                        버튼입니다
+                    </del>
+                </strong>
+            </button>
+            <button>버튼입니다</button>
+
+            <input type="submit" value="제출" />
+        </form>
+        
+        <section> <!-- 같은 주제를 가지고 있는 내용의 모임-->
+            <h1>구획1 제목</h1>
+            구획1 내용
+        </section>
+        <nav> <!-- 네비게이션, 페이지 이동 버튼 모임-->
+            <u1>
+                <1i><a href="링크주소"></a></1i>
+                <1i><a href="링크주소"></a></1i>
+            </u1>
+            <a href="링크주소">링크버튼</a>
+        </nav>
+        <article> <!-- 연관성이 다소 적은 내용의 모임-->
+            <h1>기사 제목</h1>
+            기사 내용
+        </article>
+        <article> <!-- 연관성이 아예 없는 내용의 모임-->
+            <h1>광고 제목</h1>
+            광고 내용
+        </article>
+
+        <header></header> <!-- 본문(body)내의 서론-->
+        <footer></footer> <!-- 본문(body)내의 결론-->
+
+        <canvas id="myCanvas"></canvas>
+        <script>canvas = document.getElementById("myCanvas");
+        //get elemlement by id
+        //id 기준으로 요소 가져오기
+        var ctx = canvas.getContext("2d"); //2D canvas를 생성합니다.
+            ctx.fillStyle = "#FF0000"; //색을 지정합니다.
+
+            ctx.fillRect(25, 25, 100, 100); //채움 사각형
+            ctx.fillRect(25, 25, 100, 100); //채움 사각형
+            ctx.clearRect(45, 45, 60, 60); //사각형태로 지우기
+            ctx.strokeRect(50, 50, 50, 50); //윤곽 사각형
+        
+            ctx.fillStyle = "#000000";
+            ctx.beginPath(); //선그리기 시작
+            ctx.moveTo(65, 75); //펜 들어 움직이기
+            ctx.lineTo(90, 95); //선 그으며 움직이기
+            ctx.lineTo(90, 55);
+            ctx.fill(); //내부 채우기
+        
+            ctx.beginPath();
+            ctx.arc(225, 75, 50, 0, Math.PI * 2, true); // Outer circle 
+            ctx.moveTo(260, 75);
+            ctx.arc(225, 75, 35, 0, Math.PI, false);  // Mouth (clockwise)
+            ctx.moveTo(215, 65);
+            ctx.arc(210, 65, 5, 0, Math.PI * 2, true);  // Left eye
+            ctx.moveTo(245, 65);
+            ctx.arc(240, 65, 5, 0, Math.PI * 2, true);  // Right eye
+            ctx.stroke();
+        </script>
+
+        <audio controls autoplay mute>
+            <source src="mp3/file_example_MP3_700KB.mp3" type="audio/mpeg" />
+        </audio>
+        <video controls>
+            <source src="mp4/file_example_MP4_480_1_5MG.mp4" type="video/mp4" />
+        </video>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pqul48dI9UY?si=WK__iENxT-16qTaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
     </body>
 </html>

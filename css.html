@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css</title>
+        <meta charset="utf-8" />
+        <style>
+            body{ color: rgb(83, 205, 26); }
+            div{ 
+                color: blue; 
+                color: #817f45a3;
+                color: rgb(196, 91, 161);
+            }
+
+            /* css 주석 */
+        </style>
+        <!-- html 주석 -->
+    </head>
+    <body>
+        <div id="di">상속</div>
+
+        <style>
+            div{
+                background-color: antiquewhite;
+                border: solid 1px black;
+            }
+            #d2{
+                width: 100px;
+                height: 200px;
+            }
+        </style>
+        <div id="d2"> width height</div>
+        
+        <style>
+            #d3{
+                padding: 30px;
+            }
+        </style>
+        <div id="d3">padding</div>
+        <style>
+            #d4{
+                margin: 30px;
+            }
+        </style>
+        <div id="d4">maegin</div>
+
+        <style>
+            *{
+                text-decoration: underline;
+            }
+            strong{color: rgb(149, 53, 53); }
+            em{ color: blueviolet; }
+        </style>
+        <strong>strong</strong>
+        <em>em</em>
+        <strong>strong2</strong>
+
+        <style>
+            .c1{font-size: 30px;}
+            #i1{font-size: 90px;}
+        </style>
+
+        <div class="c1">class selector</div>
+        <div id="il">id selector</div>
+        
+        <style>
+            #d5::first-line{
+                color: rgb(195, 8, 8);
+            }
+            #d5::first-letter{
+                font-size: 50px;
+            }
+            #d5::before{ content: "시작"; }
+            #d5::after{ content: "끝"; }
+        </style>
+        <div id="d5">
+            first line, first letter, first line, first letter, first line, first letter, first line, first letter
+            first line, first letter, first line, first letter, first line, first letter, first line, first letter
+            first line, first letter, first line, first letter, first line, first letter, first line, first letter
+            first line, first letter, first line, first letter, first line, first letter, first line, first letter
+            first line, first letter, first line, first letter, first line, first letter, first line, first letter
+    </body>
+</html>

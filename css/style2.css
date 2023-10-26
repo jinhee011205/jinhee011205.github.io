@@ -1,0 +1,194 @@
+@charset "UTF-8";
+.clearfix::after{content: ''; display: block; clear: both;}
+.container{position: relative; width: 1700px; margin: 0 auto;}
+
+/*header*/
+.logo{
+    padding-top: 20px;
+    text-align: center;
+}
+.logo>h1{ 
+        font-family: "Sawarabi Mincho";
+        font-size: 80px; /* 크기를 20px로 설정 */
+        margin-bottom: 10px; /* 서브 메뉴와 제목 간격을 조절 */
+        margin-top: 20px; /* 제목과 상단 간격을 조정 */
+        font-weight: bold;
+}
+.logo>h2{ 
+    padding-top: 10px;
+    font-size: 20px;
+    padding-bottom: 20px;
+
+}
+
+header{
+    padding-bottom: 20px;
+    background-color: #4db0ed71;
+}
+
+/*nav*/
+.nav{
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 90px;
+}
+.nav .gnb{width: 100%;padding-top: 50px;}
+.nav .gnb>li{
+    width: 15%;
+    position: relative;
+    float: left;
+    text-align: center;
+    margin-left: 50px;
+    line-height: 40px;
+    background-color: #eaf2ff;
+}
+.nav .gnb>li:hover{
+    background-color: #94bfff;
+}
+.nav .gnb>li>a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #464648;
+    transition: all .5s;
+}
+.nav .gnb .submenu{
+    background: #cbefff;
+    display: none;
+} 
+.nav .gnb .submenu{
+    position: absolute; 
+    left: 0; top: 43px; 
+    z-index: 10; 
+    width: 143px; 
+    padding: 15px 5px; 
+}
+.nav .gnb .submenu li a{
+    font-size: 15px;
+    font-weight: 300;
+    display: block;
+}
+.nav .gnb .submenu li a:hover{
+    color: #fff;
+}
+
+.main{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+
+.contents1{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    line-height: 25px; /* 텍스트의 행간 */
+}
+.contents1>a>img{
+    padding-bottom: 10px;
+}
+
+.table_tt{
+    font-size: 30px;
+    padding-bottom: 30px;
+    padding-top: 150px;
+    font-weight: bold;
+    color: #030869;
+}
+
+.table_te{
+    font-size: 22px;
+    padding-bottom: 24px;
+    color: #03086974;
+}
+
+
+table,tr,th,td{
+    border: 1px solid #00112f;
+    color: #3e4a74;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 200px;
+    line-height: 50px;
+}
+
+
+.contents3{
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+.quiz_tt{
+    font-size: 60px;
+    color: #aa1818;
+    font-weight: bold;
+    padding-bottom: 24px;
+}
+.quiz_tt>p{
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 24px;
+}
+
+.quiz_img{
+    padding-bottom: 20px;
+}
+.quiz_img>img{
+    width: 500px;
+}
+
+form{
+    color: #a66461aa;
+}
+
+.video{
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.contents4{
+    padding-top: 150px;
+    font-size: 20px;
+}
+
+.contents4>h1{
+    color: #0d325fea;
+    font-size: 26px;
+    padding-bottom: 12px;
+}
+
+.contents4>h2{
+    color: #617a9889;
+    font-size: 18px;
+}
+
+/* footer */
+footer{
+    text-align: center;
+    background-color: #2878aa;
+    color: #fff;
+}
+.f_1{
+    font-size: 10px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.f_2{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.copy{
+    padding-bottom: 20px;
+}
+.f_1>p{
+    padding-bottom: 5px;
+}
+.f_2>p{
+    padding-bottom: 5px;
+}
+.copy>p{
+    font-size: 8px;
+    padding-bottom: 5px;
+}
